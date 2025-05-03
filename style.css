@@ -206,6 +206,48 @@
     display: none !important;
   }
 }
+.md\:flex {
+  @media (width >= 48rem /* 768px */) {
+      display: flex;
+  }
+}
+.md\:hidden {
+  @media (width >= 48rem /* 768px */) {
+      display: none;
+  }
+}
+.hover\:text-white {
+  &:hover {
+      @media (hover: hover) {
+          color: var(--color-white) /* #fff = #ffffff */;
+      }
+  }
+}
+.hover\:bg-black {
+  &:hover {
+      @media (hover: hover) {
+          background-color: var(--color-black) /* #000 = #000000 */;
+      }
+  }
+}
+.m-3 {
+  margin: calc(var(--spacing) * 3) /* 0.75rem = 12px */;
+}
+.p-3 {
+  padding: calc(var(--spacing) * 3) /* 0.75rem = 12px */;
+}
+.rounded-lg {
+  border-radius: var(--radius-lg) /* 0.5rem = 8px */;
+}
+.block {
+  display: block;
+}
+.p-3 {
+  padding: calc(var(--spacing) * 3) /* 0.75rem = 12px */;
+}
+.inset-0 {
+  inset: calc(var(--spacing) * 0) /* 0rem = 0px */;
+}
 @layer utilities {
   .fixed {
     position: fixed;
