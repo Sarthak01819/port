@@ -12,7 +12,7 @@
     <!-- Nav Starts here -->
     <nav class="w-full fixed flex justify-between px-2 bg-white" style="height: 3rem;">
         <!-- <div class="text-black font-bold text-4xl cursor-pointer">SARTHAK</div> -->
-        <img style="height: 50px;" src="images/s-png-28667.png" alt="Sarthak Singh">
+        <img style="height: 47px;" src="images/s-png-28667.png" alt="Sarthak Singh">
         <div class="">
             <ul class="p-3 text-black font-medium hidden md:flex">
                 <li class="px-4 cursor-pointer"><a href="index.html">Home</a></li>
@@ -21,7 +21,7 @@
                 <li class="px-4 cursor-pointer"><a href="projects.html">Projects</a></li>
             </ul>
         </div>
-        <div class="text-black text-3xl font-medium hidden md:flex"><button><a href="contact.html">Contact</a></button>
+        <div class="text-black text-2xl font-medium hidden md:flex"><button><a href="contact.html">CONTACT</a></button>
         </div>
         <button class=" md:hidden p-2" onclick="handleMenu()"><img style="height: 30px; width: auto; color: black; "
                 src="images/menu.png" alt="Menu Button"></button>
@@ -45,7 +45,7 @@
 
     <!-- Contact Page Starts here  -->
     <div class="flex flex-wrap justify-around justify-items-center w-full border-white border-b-2"
-        style="padding-top: 4.6rem; margin-bottom: 4rem;">
+        style="padding-top: 3.2rem; margin-bottom: 4rem;">
         <div style="padding: 4rem 0rem 0 2rem ">
             <div class="text-white text-4xl font-bold ">
                 <h1>CONTACT</h1>
@@ -62,10 +62,12 @@
                 </div>
             </div>
         </div>
-        <div class="md:w-full h-full justify-items-center" style=" height: 100%; width: 50%; ">
-            <div class="bg-white" style="padding-top: 2rem; padding-bottom: 2rem;">
+
+        <!-- Mobile First Approch -->
+        <div class=" h-full justify-items-center hidden md:flex" style=" height: 100%; width: 50%; ">
+            <div class="bg-white justify-items-center" style="padding-top: 2rem; padding-bottom: 2rem; width: 100%;">
                 <input class="bg-black text-white font-medium"
-                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem;" type="text"
+                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem; " type="text"
                     placeholder="Enter your name"><br>
                 <input class="bg-black text-white font-medium"
                     style="margin: 1rem; border-radius: 5px;  padding: 0.3rem;" type="email"
@@ -83,6 +85,35 @@
                         style="border-radius: 5px; padding-left: 0.3rem;" id=""></textarea>
                 </div><br>
                 <div class="font-normal bg-black text-white justify-items-center"
+                    style="margin: 0 4rem 2rem 4rem; border-radius: 5px;">
+                    <button class="p-2 cursor-pointer text-xl justify-items-center"
+                        style=" border-radius: 8px; padding-bottom: 0.6rem;">Send it over</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- For Desktop -->
+        <div class=" h-full justify-items-center md:hidden " style=" height: 100%; width: 50%; ">
+            <div class=" justify-items-center" style="padding-top: 2rem; padding-bottom: 2rem; width: 100%;">
+                <input class="bg-white text-black font-medium"
+                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem; " type="text"
+                    placeholder="Enter your name"><br>
+                <input class="bg-white text-black font-medium"
+                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem;" type="email"
+                    placeholder="Email address"><br>
+                <input class="bg-white text-black font-medium"
+                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem;" type="text"
+                    placeholder="Company name"><br>
+                <input class="bg-white text-black font-medium"
+                    style="margin: 1rem; border-radius: 5px;  padding: 0.3rem;" type="url"
+                    placeholder="www.example.com"><br>
+                <div class="justify-items-center"
+                    style="padding-left: 0rem; padding-right: 0rem; margin: 1rem 1rem 1rem 1rem;">
+                    <textarea name="message" rows="4" placeholder="Product Description..."
+                        class="py-2 focus:outline-none resize-none w-full bg-white text-black font-medium"
+                        style="border-radius: 5px; padding-left: 0.3rem;" id=""></textarea>
+                </div><br>
+                <div class="font-normal bg-white text-black justify-items-center"
                     style="margin: 0 4rem 2rem 4rem; border-radius: 5px;">
                     <button class="p-2 cursor-pointer text-xl justify-items-center"
                         style=" border-radius: 8px; padding-bottom: 0.6rem;">Send it over</button>
